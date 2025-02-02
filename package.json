@@ -1,0 +1,35 @@
+{
+  "name": "worky-hours",
+  "productName": "Worky Hours",
+  "description": "A simple desktop app that calculates and displays total work hours based on selected month days.",
+  "version": "1.0.0",
+  "main": "./src/main/main.js",
+  "author": "Denys Vekeryk",
+  "license": "MIT",
+  "scripts": {
+    "watch": "nodemon --exec electron .",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.1",
+    "@electron-forge/maker-deb": "^7.6.1",
+    "@electron-forge/maker-rpm": "^7.6.1",
+    "@electron-forge/maker-squirrel": "^7.6.1",
+    "@electron-forge/maker-zip": "^7.6.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.1",
+    "@electron-forge/plugin-fuses": "^7.6.1",
+    "@electron/fuses": "^1.8.0",
+    "babel-runtime": "^6.26.0",
+    "electron": "^34.0.2",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "packageManager": "yarn@1.22.22"
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="../../node_modules/@fullcalendar/core/index.global.min.js"></script>
+  <script type="text/javascript" src="../../node_modules/@fullcalendar/daygrid/index.global.min.js"></script>
+  <script type="text/javascript" src="../../node_modules/@fullcalendar/interaction/index.global.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Worky Hours</title>
+</head>
+
+<body>
+  <div id="calendar"></div>
+
+  <div class="controls-container">
+    <label for="hoursPerDay">Hours per day:</label>
+    <input type="number" id="hoursPerDay" min="0" max="24" value="8">
+
+    <h2>Total Hours: <span id="totalHours">0</span></h2>
+  </div>
+
+  <script type="module" src="renderer.js"></script>
+</body>
+
+</html>
